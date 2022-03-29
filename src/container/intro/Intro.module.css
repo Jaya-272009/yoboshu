@@ -1,0 +1,86 @@
+.mainBlock{
+    display: flex;
+    flex-direction: row;
+    padding:0rem 2rem;
+}
+.blockText{
+    flex-basis: 50%;
+    padding: 2rem 6rem;
+
+}
+.blockVideo{
+    flex-basis: 50%;
+    padding: 0;
+    object-fit:cover;
+    /* align-items: top; */
+    top: 0;
+}
+
+.mainHeading{
+    font-family: Raleway, sans-serif;
+    font-size: 3rem;
+    font-weight: 1200;
+    Line-height: 73.125px;
+    color: rgb(85, 85, 85);
+}
+.subHeading{
+    font-family:'UbuntuRegular', Raleway, sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    Line-height: 46.125px;
+    color: rgb(85, 85, 85);
+    margin: 4rem 0;
+}
+
+.videoPlayer{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width:900px) {
+    .mainBlock{
+        flex-direction: column-reverse;
+        padding:1.5rem ;
+    }
+
+    .blockText{
+        flex-basis: 100%;
+        padding:0;
+    }
+    .blockVideo{
+        flex-basis: 100%;
+        padding: 0;
+        object-fit: cover;
+    }
+    
+    .mainHeading{
+        font-size: 2rem;
+        Line-height:3rem;
+    }
+    .subHeading{
+        font-size: 1.3rem;
+        Line-height: 1.6rem;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1800px) {
+    .mainBlock{
+        padding:0rem 1rem;
+    }
+    .blockText{
+        flex-basis: 50%;
+        padding: 2rem;
+    
+    }
+    
+    .mainHeading{
+        font-size: 2.3rem;
+        Line-height: 3.4rem;
+    }
+    .subHeading{
+        font-size: 1.7rem;
+        margin: 4rem 0;
+    }
+}
